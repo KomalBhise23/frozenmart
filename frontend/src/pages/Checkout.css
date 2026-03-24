@@ -1,0 +1,107 @@
+.checkout-page{
+    background:#f1f8f4;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.checkout-title{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:28px;
+    color:#1b5e20;
+    font-weight:600;
+}
+
+.checkout-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* Shipping Card */
+
+.shipping-card{
+    background:white;
+    padding:28px;
+    border-radius:10px;
+    border-top:5px solid #2e7d32;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.shipping-card h3{
+    margin-bottom:12px;
+    color:#2e7d32;
+}
+
+.shipping-card input{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:14px;
+    transition:all 0.2s ease;
+}
+
+.shipping-card input:focus{
+    outline:none;
+    border-color:#2e7d32;
+    box-shadow:0 0 0 2px rgba(46,125,50,0.15);
+}
+
+
+/* Order Summary */
+
+.summary-card{
+    background:white;
+    padding:28px;
+    border-radius:10px;
+    border-top:5px solid #2e7d32;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    height:fit-content;
+}
+
+.summary-card h3{
+    margin-bottom:18px;
+    color:#2e7d32;
+}
+
+.summary-item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.summary-total{
+    margin-top:22px;
+    padding-top:12px;
+    border-top:1px solid #eee;
+    font-weight:600;
+    font-size:18px;
+    color:#2e7d32;
+}
+
+
+/* Button */
+
+.place-order-btn{
+    width:100%;
+    margin-top:20px;
+    padding:13px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.place-order-btn:hover{
+    background:#1b5e20;
+}

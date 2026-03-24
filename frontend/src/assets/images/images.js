@@ -1,0 +1,13 @@
+import AlphonsoMangoPulp from "../images/AlphonsoMangoPulp.jpg";
+import BabyCarrots from "../images/BabyCarrots.jpg";
+import FrozenGreenPeas from "../images/FrozenGreenPeas.jpg";
+import FrozenMangoCubes from "../images/FrozenMangoCubes.jpg";
+import FrozenPineappleChunks from "../images/FrozenPineappleChunks.jpg";
+import FrozenSpinach from "../images/FrozenSpinach.jpg";
+import FrozenStrawberries from "../images/FrozenStrawberries.jpg";
+import MixedBerryBlend from "../images/MixedBerryBlend.jpg";
+import MixedVegetables from "../images/MixedVegetables.jpg";
+import StrawberryPulp from "../images/StrawberryPulp.jpg";
+import SweetCornKernels from "../images/SweetCornKernels.jpg";
+import BlueberryPulp from "../images/BlueberryPulp.jpg";
+export { AlphonsoMangoPulp, BabyCarrots, BlueberryPulp, FrozenGreenPeas, FrozenMangoCubes, FrozenPineappleChunks, FrozenSpinach, FrozenStrawberries, MixedBerryBlend, MixedVegetables, StrawberryPulp, SweetCornKernels,  };
