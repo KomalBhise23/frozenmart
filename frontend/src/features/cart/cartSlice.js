@@ -37,7 +37,7 @@ const cartSlice = createSlice({
       if (item) {
         item.quantity += 1;
       }
-      localStorage.cartItems("cartItems", JSON.stringify(state.cartItems));
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
 
     decreaseQuantity: (state, action) => {
@@ -48,12 +48,12 @@ const cartSlice = createSlice({
       if (item && item.quantity > 1) {
         item.quantity -= 1;
       }
-        localStorage.cartItems("cartItems", JSON.stringify(state.cartItems));
+        localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
 
     clearCart: (state) => {
       state.cartItems = [];
-      localStorage.cartItems("cartItems", JSON.stringify(state.cartItems));
+     localStorage.removeItem("cartItems");
     },
       
   },

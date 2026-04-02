@@ -12,6 +12,8 @@ import "./App.css";
 import OrderSuccess from "./pages/OrderSuccess";
 import OrderDetails from "./pages/OrderDetails";
 import ProductDetails from "./pages/ProductDetails";
+import ProductsTab from "./pages/ProductsTab";
+import Category from "./pages/Category";
 function App() {
   return (
     <>
@@ -19,10 +21,9 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route
-          path="/"
-          element={ <Home />}
-        />
+        <Route path="/products" element={ <ProductsTab />} />
+         
+        <Route path="/" element={ <Home />} />
         <Route
           path="/cart"
           element={

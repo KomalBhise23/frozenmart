@@ -1,0 +1,196 @@
+/* 🌿 Page Container */
+.product-page {
+  padding: 30px 20px;
+  background: #f4f7f6;
+  min-height: 100vh;
+}
+
+/* 🏷 Title */
+.product-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   🔍 SEARCH + SORT SECTION
+========================= */
+.product-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.controls-inner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Search */
+.product-search {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.product-search:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+/* Sort Dropdown */
+.product-sort {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* =========================
+   📂 CATEGORY FILTER
+========================= */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #2e7d32;
+  background: white;
+  color: #2e7d32;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.category-btn:hover {
+  background: #2e7d32;
+  color: white;
+}
+
+.category-btn.active {
+  background: #2e7d32;
+  color: white;
+}
+
+/* =========================
+   🛒 PRODUCT GRID
+========================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   🧾 PRODUCT CARD
+========================= */
+.product-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.product-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Name */
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Price */
+.product-price {
+  color: #2e7d32;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Category Tag */
+.product-category {
+  display: inline-block;
+  margin-top: 8px;
+  background: #e8f5e9;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+/* Button */
+.add-cart-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+  background: #1b5e20;
+}
+
+/* =========================
+   📱 RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .product-title {
+    font-size: 24px;
+  }
+
+  .controls-inner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product-search {
+    width: 100%;
+  }
+
+  .product-sort {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

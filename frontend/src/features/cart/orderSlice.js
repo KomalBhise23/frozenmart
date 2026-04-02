@@ -7,7 +7,12 @@ const orderSlice = createSlice({
     initialState,
     reducers:{
         addOrder:(state, action)=>{
-            state.orderList.push(action.payload)
+            const newOrder = {
+                ...action.payload,
+                id: Date.now(),
+                createdAt: new Date().toISOString()
+            }
+            state.orderList.push(newOrder);
             localStorage.setItem("orders", JSON.stringify(state.orderList))
         }
     }

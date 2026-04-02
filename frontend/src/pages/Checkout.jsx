@@ -90,7 +90,7 @@ const Checkout = () => {
 
           {cartItems.map((item)=>(
             <div key={item.id} className="summary-item">
-               <span>{item.date}</span>
+               
               <span>{item.title}</span>
 
               <span>
